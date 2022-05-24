@@ -135,3 +135,16 @@ function recommendMovie() {
     console.log("Hey, check out this film!")
 }
 //  || is the logical 'or' operator
+
+//OBJECTS
+let course = {
+    title: "learn css grid for free",
+    lesson: 16,
+    creator: "Josh",
+    length: 63,
+    level: 2,
+    isFree: true
+}
+
+console.log(course.length) 
+
