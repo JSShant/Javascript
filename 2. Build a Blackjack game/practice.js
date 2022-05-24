@@ -42,3 +42,29 @@ console.log(cards)
 //remove last item in an array
 cards.pop()
 console.log(cards)
+
+//COUNTING
+
+for (let count =1; count < 11; count+= 1 ) {
+
+    console.log(count)
+}
+
+// FOR LOOPS
+for (let i = 10; i < 101; i+= 10) {
+    console.log(i)
+}
+
+// ARRAYS AND LOOPS
+
+let potato = [11, 6, 7, 8, 9]
+for (let i = 0; i < potato.length; i+=1) {
+    console.log(potato[i])
+}
+
+//For loops, Arrays and DOM
+let sentence = ["hello", "my", "name", "is", "josh"]
+let greetingEl = document.getElementById("greeting__el")
+for (let i = 0; i < sentence.length; i+=1) {
+    greetingEl.textContent += sentence[i] + " "
+}
