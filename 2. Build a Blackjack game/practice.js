@@ -68,3 +68,25 @@ let greetingEl = document.getElementById("greeting__el")
 for (let i = 0; i < sentence.length; i+=1) {
     greetingEl.textContent += sentence[i] + " "
 }
+
+//returning values in functions
+let player1Time = 102
+let player2Time = 107
+
+function getFastestRaceTime() {
+    if (player1Time < player2Time) {
+        return player1Time
+    } else if (player2Time < player1Time) {
+        return player2Time
+    } else {
+        return player1Time
+    }
+}
+let fastestRace = getFastestRaceTime()
+console.log(fastestRace)
+
+function totalRaceTime() {
+    return player1Time + player2Time
+}
+let total = totalRaceTime()
+console.log(total)
