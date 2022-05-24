@@ -148,3 +148,58 @@ let course = {
 
 console.log(course.length) 
 
+// CHALLENGES
+// OBJECTS AND FUNCTIONS
+let person = {
+    name: "Joshua",
+    age: 24, 
+    country: "Australia"
+}
+
+function logdata() {
+    console.log(person.name + " is " + person.age + " years old and lives in " + person.country)
+}
+logdata()
+
+// // IF ELSE
+// // let age1 = 15
+// // console.log(discount())
+// // if (age1 < 6) {
+// //     console.log("free")
+// // } else if (age1 <= 17) {
+// //     console.log("child")
+// // } else if (age1 <= 26) {
+// //     console.log("student")
+// // } else if (age1 <= 66) {
+// //     console.log("full")
+// // }
+
+//LOOPS AND ARRAYS
+let largeCountries = ["China", "India", "USA", "Indonesia", "Pakistan"]
+for (let i = 0; i < largeCountries.length; i++) {
+    console.log(" - " + largeCountries[i])
+}
+
+//Push, Pop , shift, unshift
+let largeCountries1 = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+largeCountries1.pop()
+largeCountries1.push("Pakistan")
+largeCountries1.shift()
+largeCountries1.unshift("China")
+console.log(largeCountries1)
+
+//logical operations
+let datOfMonth = 13
+let weekday = "Friday"
+if (datOfMonth === 13 && weekday === "Friday") {
+    console.log("Its Friday the 13th")
+}
+
+//Rock Paper Scissors
+let hands = ["rock","paper","scissor"]
+function getHand() {
+    let randomIndex = Math.floor( Math.random() * 3)
+    return hands[randomIndex]
+}
+console.log(getHand())
+//Sorting Fruits
