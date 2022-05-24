@@ -90,3 +90,19 @@ function totalRaceTime() {
 }
 let total = totalRaceTime()
 console.log(total)
+
+//generating random numbers
+let randomNumber = Math.random() 
+console.log(randomNumber)
+let randomNumber2 = Math.random() * 6 //gives value ranging from 0-5.99
+console.log(randomNumber2)
+let flooredNumber = Math.floor(3.185632) //removes decimals
+console.log(flooredNumber)
+let randomNumber3 = Math.floor( Math.random() * 6 ) + 1 //Dice random number
+console.log(randomNumber3)
+
+function rollDice() {
+    let diceRoll = Math.floor( Math.random() * 6) + 1
+    return diceRoll
+}
+console.log( rollDice () )
