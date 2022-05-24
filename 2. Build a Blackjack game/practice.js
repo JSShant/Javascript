@@ -106,3 +106,32 @@ function rollDice() {
     return diceRoll
 }
 console.log( rollDice () )
+
+//Logical Operators
+let hasCompletedCourse = true
+let givesCertificate = true
+if (hasCompletedCourse === true && givesCertificate === true) {
+    generateCerticate()
+}
+function generateCerticate () {
+    console.log("Generating Certificate")
+}
+
+let hasSolvedChallenge = false
+let hasHintsLeft = false
+if (hasSolvedChallenge === false && hasHintsLeft === false) {
+    showSolution()
+}
+function showSolution() {
+    console.log("Showing the solution..")
+}
+// && is the logical 'and' operator
+let likesDocumentaries = true
+let likesStartups = false
+if (likesDocumentaries === true || likesStartups === true) {
+    recommendMovie()
+}
+function recommendMovie() {
+    console.log("Hey, check out this film!")
+}
+//  || is the logical 'or' operator

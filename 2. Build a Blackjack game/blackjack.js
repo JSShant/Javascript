@@ -81,12 +81,14 @@ function renderGame() {
 
 //New Card Button
 function newCard() {
-    console.log("Drawing a new card from the deck!")
-    let card = getRandomCard()
-    sum += card
-    cards.push(card)
-    console.log(cards)
-    renderGame()
+    if (isAlive === true && hasBlackJack === false) {
+        let card = getRandomCard()
+        sum += card
+        cards.push(card)
+        console.log(cards)
+        renderGame()
+        console.log("Drawing a new card from the deck!")
+    }
 }
 //create new card variable with a value and add it to sum variable (L60-62)
 //Rename startGame as doesnt make sense, its being called in newCard.
