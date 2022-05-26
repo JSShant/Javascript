@@ -8,20 +8,25 @@ const inputBtn = document.getElementById("input__btn")
 const ulEl = document.getElementById("ul__el")
 let listItems = ""
 inputBtn.addEventListener("click", function() {
-    console.log("Button Clicked from event listener!")
     //myLeads.push("www.awesomelead.com") - this is a hardcoded value
     myLeads.push(inputEl.value)
-    console.log(myLeads)
+    inputEl.value = ""
     renderLeads()
 })
 //Const cannot be reassigned
 function renderLeads() {
-    for (let i = 0; i < myLeads.length; i += 1) {
+    for (let i = 0; i < myLeads.length; i ++) {
         //ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
         // const li = document.createElement("li")
         // li.textContent = myLeads[i]
         // ulEl.append(li) (
-        listItems += "<li>" + myLeads[i] + "</li>"
+        listItems += `
+            <li>
+                <a target='_blank' href='${myLeads[i]}'>
+                    ${myLeads[i]}
+                </a>
+            </li>
+    `
     }
     ulEl.innerHTML = listItems
 }
