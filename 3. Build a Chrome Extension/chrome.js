@@ -9,8 +9,12 @@ const ulEl = document.getElementById("ul__el")
 
 //localStorage.setItem("myLeads", "www.examplelead.com") //only strings in localStorage
 //console.log (localStorage.getItem("myLeads") ) to check what youve hardcoded into storage
-localStorage.clear()
+
 let leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
+if (leadsFromLocalStorage) {
+    myLeads = leadsFromLocalStorage
+    renderLeads()
+}
 
 console.log(leadsFromLocalStorage)
 
