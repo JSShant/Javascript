@@ -7,8 +7,12 @@ const inputEl = document.getElementById("input__el")
 const inputBtn = document.getElementById("input__btn")
 const ulEl = document.getElementById("ul__el")
 
-localStorage.setItem("myLeads", "www.examplelead.com") //only strings in localStorage
+//localStorage.setItem("myLeads", "www.examplelead.com") //only strings in localStorage
 //console.log (localStorage.getItem("myLeads") ) to check what youve hardcoded into storage
+localStorage.clear()
+let leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
+
+console.log(leadsFromLocalStorage)
 
 inputBtn.addEventListener("click", function() {
     //myLeads.push("www.awesomelead.com") - this is a hardcoded value
