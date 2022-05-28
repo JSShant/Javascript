@@ -6,15 +6,21 @@ let myLeads = []
 const inputEl = document.getElementById("input__el")
 const inputBtn = document.getElementById("input__btn")
 const ulEl = document.getElementById("ul__el")
-let listItems = ""
+
+localStorage.setItem("myLeads", "www.examplelead.com") //only strings in localStorage
+//console.log (localStorage.getItem("myLeads") ) to check what youve hardcoded into storage
+
 inputBtn.addEventListener("click", function() {
     //myLeads.push("www.awesomelead.com") - this is a hardcoded value
     myLeads.push(inputEl.value)
     inputEl.value = ""
+    localStorage.setItem("myLeads", JSON.stringify(myLeads))
     renderLeads()
 })
+
 //Const cannot be reassigned
 function renderLeads() {
+    let listItems = ""
     for (let i = 0; i < myLeads.length; i ++) {
         //ulEl.innerHTML += "<li>" + myLeads[i] + "</li>"
         // const li = document.createElement("li")
