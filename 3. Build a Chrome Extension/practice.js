@@ -5,3 +5,11 @@ boxBtn.addEventListener("click", function() {
 
 let trueOfFalse = Boolean("hello")
 console.log(trueOfFalse)
+
+const welcomeEl = document.getElementById("welcome__el")
+
+function greetUser(greeting) {
+    welcomeEl.textContent = " " + greeting + " Joshua "
+}
+
+greetUser("Howdy")
