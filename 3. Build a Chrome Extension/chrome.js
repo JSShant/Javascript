@@ -10,7 +10,7 @@ const ulEl = document.getElementById("ul__el")
 //localStorage.setItem("myLeads", "www.examplelead.com") //only strings in localStorage
 //console.log (localStorage.getItem("myLeads") ) to check what youve hardcoded into storage
 
-let leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
+const leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
     renderLeads()
