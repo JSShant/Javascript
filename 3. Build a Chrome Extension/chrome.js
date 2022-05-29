@@ -6,6 +6,7 @@ let myLeads = []
 const inputEl = document.getElementById("input__el")
 const inputBtn = document.getElementById("input__btn")
 const ulEl = document.getElementById("ul__el")
+const delBtn = document.getElementById("delete__btn")
 
 //localStorage.setItem("myLeads", "www.examplelead.com") //only strings in localStorage
 //console.log (localStorage.getItem("myLeads") ) to check what youve hardcoded into storage
@@ -17,6 +18,13 @@ if (leadsFromLocalStorage) {
 }
 
 console.log(leadsFromLocalStorage)
+
+delBtn.addEventListener("dblclick", function() {
+    console.log("double cliked!")
+    localStorage.clear()
+    myLeads = ""
+    renderLeads()
+})
 
 inputBtn.addEventListener("click", function() {
     //myLeads.push("www.awesomelead.com") - this is a hardcoded value
