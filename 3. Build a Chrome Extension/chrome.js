@@ -38,12 +38,12 @@ function render(leads) {
 
 
 saveBtn.addEventListener("click", function() {
-    console.log(tabs[0].url)
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        myLeads.push(tabs[0].url)
+        localStorage.setItem("myLeads", JSON.stringify(myLeads) )
+        render(myLeads)
+    })
 })
-
-const tabs = [
-    {url: "www.google.com"}
-]
 
 delBtn.addEventListener("dblclick", function() {
     console.log("double cliked!")
