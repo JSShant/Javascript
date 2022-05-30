@@ -7,6 +7,7 @@ const inputEl = document.getElementById("input__el")
 const inputBtn = document.getElementById("input__btn")
 const ulEl = document.getElementById("ul__el")
 const delBtn = document.getElementById("delete__btn")
+const saveBtn = document.getElementById("save__btn")
 
 //localStorage.setItem("myLeads", "www.examplelead.com") //only strings in localStorage
 //console.log (localStorage.getItem("myLeads") ) to check what youve hardcoded into storage
@@ -35,12 +36,19 @@ function render(leads) {
     ulEl.innerHTML = listItems
 }
 
-console.log(leadsFromLocalStorage)
+
+saveBtn.addEventListener("click", function() {
+    console.log(tabs[0].url)
+})
+
+const tabs = [
+    {url: "www.google.com"}
+]
 
 delBtn.addEventListener("dblclick", function() {
     console.log("double cliked!")
     localStorage.clear()
-    myLeads = ""
+    myLeads = []
     render(myLeads)
 })
 
