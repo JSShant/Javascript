@@ -24,3 +24,9 @@ function add(num1, num2) {
     return num1 + num2
 }
 console.log(add(3, 4))
+
+function getFirst(arr) {
+    return arr[0]
+}
+let firstCard = getFirst([10,2,5])
+console.log(firstCard)
