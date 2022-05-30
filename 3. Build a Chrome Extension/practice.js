@@ -9,7 +9,13 @@ console.log(trueOfFalse)
 const welcomeEl = document.getElementById("welcome__el")
 
 function greetUser(greeting) {
-    welcomeEl.textContent = " " + greeting + " Joshua "
+    welcomeEl.textContent =  greeting + " Joshua "
 }
 
 greetUser("Howdy")
+
+function greetUser(greeting, name) {
+    welcomeEl.textContent =  ` ${greeting} , ${name} `
+}
+
+greetUser("Howdy", "James")
