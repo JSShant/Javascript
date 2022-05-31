@@ -11,7 +11,7 @@ const welcomeEl = document.getElementById("welcome__el")
 function greetUser(greeting) {
     welcomeEl.textContent =  greeting + " Joshua "
 }
-
+ 
 greetUser("Howdy")
 
 function greetUser(greeting, name) {
@@ -30,3 +30,20 @@ function getFirst(arr) {
 }
 let firstCard = getFirst([10,2,5])
 console.log(firstCard)
+
+//Let, Const, Template Strings
+
+const player = "Per"
+const opponent = "Nick"
+const game = "AmazingFighter"
+let points = 0
+let hasWon = false
+
+points += 100
+hasWon = true
+
+if (hasWon) {
+    console.log(`${player} got ${points} points and won the ${game} game!"`)
+} else {
+    console.log("The winner is " + opponent + "! " + player + " lost the game")
+}
