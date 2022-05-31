@@ -58,3 +58,21 @@ function logItems(arr) {
 }
 
 logItems(myCourses)
+
+//addEventListenere and object in Array
+let data = [
+    {
+        player: "Jane",
+        score: 52
+    }, 
+    {
+        player: "Mark",
+        score: 41
+    }
+]
+
+let janeBtn = document.getElementById("jane__btn")
+
+janeBtn.addEventListener("click", function() {
+    console.log(data[0].score)
+})
