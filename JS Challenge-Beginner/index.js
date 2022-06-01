@@ -34,3 +34,14 @@ function stringNumber(string) {
     return +string + 1 //putting +infront converts to number
 }
 console.log(stringNumber("3"))
+
+//greater than 100
+function sumGreater100(num1, num2) {
+    sum = num1+num2
+    if (sum <= 100) {
+        return "false"
+    } else {
+        return "true"
+    }
+}
+console.log(sumGreater100(20,10))
