@@ -45,3 +45,8 @@ function sumGreater100(num1, num2) {
     }
 }
 console.log(sumGreater100(20,10))
+
+function sumGreaterThan100(num1, num2) {
+    return num1 + num2 > 100
+}
+console.log(sumGreaterThan100(20,10)) // Using BOOLEANS
