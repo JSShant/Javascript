@@ -50,3 +50,30 @@ function sumGreaterThan100(num1, num2) {
     return num1 + num2 > 100
 }
 console.log(sumGreaterThan100(20,10)) // Using BOOLEANS
+
+//Less than or equal to zero
+function lessThan(num1) {
+    return num1 <= 0
+}
+console.log(lessThan(-5))
+
+//Opposite Boolean
+function oppositeBoolean(bool) {
+    if (bool === true) {
+        return "false"
+    } else {
+        return "true"
+    }
+}
+console.log(oppositeBoolean(true))
+
+function oppositeBoolean1(bool) {
+    return !bool        //! infront of boolean value gives opposite
+}
+console.log(oppositeBoolean1(true))
+
+function isNotZero(num1) {
+    return num1 !== 0  // !== is the opposite of ===
+}
+console.log(isNotZero(5))
+
