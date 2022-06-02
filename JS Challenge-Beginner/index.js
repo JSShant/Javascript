@@ -77,3 +77,30 @@ function isNotZero(num1) {
 }
 console.log(isNotZero(5))
 
+//Calculate Remainder
+function calcRemainder(num1, num2) {
+    return num1 % num2         //% remainder
+}
+console.log(calcRemainder(4, 3))
+
+// is the number odd
+function isOdd(num1){
+    return num1 % 2 !== 0
+}
+ 
+console.log(isOdd(1))
+
+//if a number is even return 1 otherwise return -1
+function number(num1){
+    if (num1 % 2 === 0) {
+        return "1"
+    } else {
+        return "-1"
+    }
+}
+console.log(number(2))
+//Ternary Opeartor
+function number1(num1) {
+    return num1 % 2 === 0 ? 1 : -1
+}
+console.log(number1(1)) // false, "" , 0 are falsy statements
