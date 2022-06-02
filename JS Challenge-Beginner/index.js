@@ -104,3 +104,15 @@ function number1(num1) {
     return num1 % 2 === 0 ? 1 : -1
 }
 console.log(number1(1)) // false, "" , 0 are falsy statements
+
+//check if user is logged in and subscribed
+function isLoggedin (loggedIn, subscribed) {
+    return loggedIn === "logged_in" && subscribed === "subscribed"
+}
+console.log(isLoggedin("logged_in", "subscribed"))
+
+//check if user is logged in OR subscribed
+function isLoggedinOr (loggedIn, subscribed) {
+    return loggedIn === "logged_in" || subscribed === "subscribed"
+}
+console.log(isLoggedinOr("logged_in", "unsubscribed"))
