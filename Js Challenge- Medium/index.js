@@ -44,3 +44,13 @@ function arrSum1(arr) {
   return sum
 }
 console.log(arrSum1([1, 2, 3, 4]))
+
+//Add up all numbers from one to the number given
+function progressiveSum(num) {
+  let sum = 0
+  for (let i = 0; i <= num; ++i){
+    sum = sum + i
+  }
+  return sum
+}
+console.log(progressiveSum(4))
