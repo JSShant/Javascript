@@ -24,3 +24,23 @@ function lastElem(arr) {
   return arr[arr.length - 1] //Arr.length gives the last count of array + 1 (because first one is 0)
 }
 console.log(lastElem([1, 2, 3, 6]))
+
+//find the sum of an array
+function arrSum(arr) {
+  for (let i = 0; i < 3; ++i ) {
+  console.log("run this code") //runs 3 times because i<3
+  }
+  console.log("for loop broken")
+}
+console.log(arrSum([1, 2, 3, 4]))
+// Whenever you want to use every element of an array use a FOR LOOP
+
+function arrSum1(arr) {
+  let sum = 0
+  for (let i = 0; i < arr.length; ++i ) { // this is how you loop through every element in an array
+  console.log(arr[i]) 
+  sum = sum + arr[i]
+  }
+  return sum
+}
+console.log(arrSum1([1, 2, 3, 4]))
