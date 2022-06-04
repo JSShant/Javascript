@@ -53,4 +53,16 @@ function progressiveSum(num) {
   }
   return sum
 }
-console.log(progressiveSum(4))
+console.log(progressiveSum(3))
+
+//calculate time - return seconds in mm:ss form at
+function calcTime(seconds) {
+  let timerMinutes =  Math.floor(seconds / 60) //math.floor rounding number down
+  let timerSeconds =  seconds % 60
+
+  if (timerMinutes.toString().length === 1) {
+    timerMinutes = "0" + timerMinutes
+  }
+  return timerMinutes + ":" + timerSeconds
+}
+console.log(calcTime(70))
