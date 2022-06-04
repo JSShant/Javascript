@@ -79,3 +79,26 @@ function getMax(arr) {
   return max
 }
 console.log(getMax([100, 200, -300]))
+
+//Reverse a string
+function reverseString(string) {   // incrementing For Loop
+  let reversedString = ""
+  for (let i=0; i<string.length; ++i) {
+    reversedString = string[i] + reversedString
+  }
+  return reversedString
+}
+console.log(reverseString("abc"))
+
+function reverseString1(string) {   // decrementing For Loop
+  let reversedString1 = ""
+  for (let i=string.length - 1; i>=0; --i) { //starting from 3 (i=string.length )
+   }
+   return null
+}
+console.log(reverseString1("abc"))
+
+function reverseString2(string) {   // Reverse Array
+  return string.split("").reverse().join("")
+}
+console.log(reverseString2("abc"))
