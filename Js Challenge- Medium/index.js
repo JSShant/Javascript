@@ -125,4 +125,19 @@ function convertToZeros2(arr) { //ARRAY MAP
 }
 console.log(convertToZeros2([1, 2, 3, 4, 5]))
 
+//Filtering out the apples
+function removeApples(app) {
+  let noApples = []
+  for (let i = 0; i < app.length; i++) {
+    if (app[i] !== "Apple") {
+      noApples.push(app[i])
+    }
+  }
+  return noApples
+}
+console.log(removeApples(["Banana", "Apple", "Orange"]))
 
+function removeApples1(app) { // ARRAY FILTER
+  return app.filter(elem => elem !== "Apple")
+}
+console.log(removeApples1(["Banana", "Apple", "Orange"]))
