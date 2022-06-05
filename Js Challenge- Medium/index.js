@@ -158,3 +158,15 @@ function filterOutFalsyArr1(arr) {
   return arr.filter(elem => !!elem) // Not like for loop wont run in relation to truths, have to replace the function
 }
 console.log(filterOutFalsyArr1(["", "tomato", false, 0]))
+
+// Truthy to True, Falsy to False
+function converToBoolean(arr) {
+  for (let i = 0; i < arr.length; ++i) {
+    if (!!arr[i] === true) {
+      return "true"
+    } else {
+      return "false"
+    }
+  }
+}
+console.log(converToBoolean([500, 0 , "Josh", ""]))
