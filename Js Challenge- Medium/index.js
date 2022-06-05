@@ -11,7 +11,7 @@ console.log(filterOutFalsy(1, 2))
 function filterOutFalsyTeneryOp(element1, element2) {
     return !element1 ? element1 : element2 //Similar will only return the first one if it is true
 }
-console.log(filterOutFalsyTeneryOp(0,2))
+console.log(filterOutFalsyTeneryOp(1,2))
 
 //Return the length of any given array
 function arrLength(arr) {
@@ -141,3 +141,20 @@ function removeApples1(app) { // ARRAY FILTER
   return app.filter(elem => elem !== "Apple")
 }
 console.log(removeApples1(["Banana", "Apple", "Orange"]))
+
+//filter out Falsy Values
+function filterOutFalsyArr(arr) {
+  let noFalsy = []
+  for (let i = 0; i < arr.length; i++) {
+    if (!!arr[i]) {
+      noFalsy.push(arr[i]) //!! gets TRUTHY VALUES 
+    }
+  }
+  return noFalsy
+}
+console.log(filterOutFalsyArr(["", "tomato", false, 0]))
+
+function filterOutFalsyArr1(arr) {
+  return arr.filter(elem => !!elem) // Not like for loop wont run in relation to truths, have to replace the function
+}
+console.log(filterOutFalsyArr1(["", "tomato", false, 0]))
