@@ -102,3 +102,27 @@ function reverseString2(string) {   // Reverse Array
   return string.split("").reverse().join("")
 }
 console.log(reverseString2("abc"))
+
+//Turn elemnts of an array to 0  
+function convertToZeros(arr) {
+  let newArr = []           // Not necessary but it keeps original array un-mutated
+  for (let i = 0; i < arr.length; ++i) {
+    newArr[i] = 0
+  }
+  return newArr
+}
+console.log(convertToZeros([1, 2, 3, 4, 5, 6]))
+
+
+function convertToZeros1(arr) {  // ARRAY FILL
+  return new Array(arr.length).fill(0)
+}
+console.log(convertToZeros1([1, 2, 3, 4, 5]))
+
+
+function convertToZeros2(arr) { //ARRAY MAP
+  return arr.map(elem => 0)
+}
+console.log(convertToZeros2([1, 2, 3, 4, 5]))
+
+
