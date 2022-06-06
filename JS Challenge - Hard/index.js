@@ -30,3 +30,12 @@ console.log(sortHighToLow([
     {id: 2, price: 30},
     {id: 3, price: 60}
 ]))
+
+//4. Find all posts by a single user - Calling API's
+async function postsByUser(uid) {
+    const promise =  await fetch("https://jsonplaceholder.typicode.com/posts")
+    const result = await promise.json()
+    const posts =  result.filter(element => element.userId === uid)
+    console.log(posts)
+}
+postsByUser(4)
