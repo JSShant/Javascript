@@ -39,3 +39,13 @@ async function postsByUser(uid) {
     console.log(posts)
 }
 postsByUser(4)
+
+// 5. First 6 incomplete tools
+
+async function firstSixIncomplete(incom) {
+    const promise = await fetch("https://jsonplaceholder.typicode.com/todos")
+    const result = await promise.json()
+    const firstSix = result.filter(element => element.completed === false).slice(0, 6)
+    console.log(firstSix)
+}
+firstSixIncomplete(6)
